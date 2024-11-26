@@ -1,0 +1,92 @@
+/* Bouton Retour */
+.back-button {
+    margin-bottom: 20px;
+}
+
+.back-button a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #007BFF;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.back-button a .arrow {
+    font-size: 18px;
+    margin-right: 5px;
+    color: #0056b3;
+}
+
+.back-button a:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #007BFF;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+
+/* Formulaire de profil */
+.manage {
+    padding: 20px;
+    background-color: #fff;
+    width: 70%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.manage h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour le formulaire */
+.form input, .form textarea, .form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form button {
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #cfb024;
+    text-decoration: none;
+}
+
+a:hover {
+   
+  color: #fbbd02;
+}

@@ -1,0 +1,175 @@
+/* Variables globales */
+:root {
+  --primary-color: #0033a0; /* Bleu Polytechnique */
+  --secondary-color: #cfb024; /* Rouge vif */
+  --light-color: #ffffff; /* Blanc */
+  --hover-bg: rgba(255, 255, 255, 0.1); /* Fond au survol */
+  --text-color: #333; /* Texte sombre */
+  --font-main: 'Inter', sans-serif;
+}
+
+/* Réinitialisation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: var(--light-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo et titre */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--light-color);
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--light-color);
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: var(--hover-bg);
+  color: var(--light-color);
+}
+
+/* Options */
+.options {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Changement de langue */
+.lang-switch button {
+  background: none;
+  border: 2px solid var(--light-color);
+  color: var(--light-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-switch button:hover {
+  background: var(--hover-bg);
+}
+
+/* Menu Profil */
+.profile-menu {
+  position: relative;
+  color: #ffffff;
+}
+
+.profil1 a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--light-color);
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.profil1 a:hover {
+  background: var(--hover-bg);
+  color: var(--light-color);
+}
+
+.profile-menu .profile-icon {
+  background: var(--light-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.profile-menu .profile-icon:hover {
+  background: var(--hover-bg);
+}
+
+.profile-menu .dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--light-color);
+  color: var(--light-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.profile-menu .dropdown a,
+.profile-menu .dropdown button {
+  padding: 0.5rem 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #ffffff !important;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.profile-menu .dropdown a:hover,
+.profile-menu .dropdown button:hover {
+  background: var(--hover-bg);
+}
+
+.profile-menu:hover .dropdown {
+  display: flex;
+}
